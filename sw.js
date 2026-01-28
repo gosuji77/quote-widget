@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = "daily-motivation-v1";
+﻿const CACHE_NAME = "daily-motivation-v2";
 const STATIC_ASSETS = [
     ".",
     "index.html",
