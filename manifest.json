@@ -1,0 +1,17 @@
+﻿{
+  "name": "Daily Motivation",
+  "short_name": "Motivation",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ff9a8b",
+  "theme_color": "#ff6f61",
+  "description": "A daily motivational quote app.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

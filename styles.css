@@ -1,0 +1,75 @@
+:root {
+    --bg-start: #ff6f61;
+    --bg-end: #ff9a8b;
+    --card-bg: #ffffff;
+    --text-main: #2f2f2f;
+    --text-muted: #5a5a5a;
+    --accent: #ff6f61;
+    --accent-hover: #ff9a8b;
+    --shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+    color: var(--text-main);
+    margin: 0;
+    font-family: "Poppins", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    padding: 24px;
+}
+
+.quote-widget {
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    padding: 28px 24px;
+    max-width: 520px;
+    width: 100%;
+    background: var(--card-bg);
+    box-shadow: var(--shadow);
+}
+
+.quote-text {
+    font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.author-text {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover,
+button:focus-visible {
+    background-color: var(--accent-hover);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
